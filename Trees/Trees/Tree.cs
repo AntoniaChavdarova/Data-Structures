@@ -26,7 +26,7 @@ public class Tree<T>
 
     public void Print(Tree<T> node , int indent)
     {
-        Console.WriteLine($"{new string(' ', 2 * indent)} {node.Value}");
+        Console.WriteLine($"{new string(' ', 2 * indent)}{node.Value}");
 
         foreach (var child in node.Children)
         {
